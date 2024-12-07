@@ -306,7 +306,6 @@ int main(int argc, char const *argv[]) {
                         filtered_colon_position = strchr(rest, ':');
 
                         if (filtered_colon_position != NULL) {
-                            // Copy the ge/le part
                             strncpy(filter_ge_le, rest, filtered_colon_position - rest);
                             filter_ge_le[filtered_colon_position - rest] = '\0';  // NULL TERMINATION
 
